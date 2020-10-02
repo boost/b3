@@ -1,0 +1,4 @@
+@mixin b3-base-heading {
+  margin: 0;
+}
+@mixin hook-base-heading { @include b3-base-heading; }

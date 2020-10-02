@@ -1,0 +1,100 @@
+$core-font-family:
+  "Open Sans",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+$core-spacing: (
+  xsmall: 0.5rem,
+  small:  1rem,
+  medium: 1.5rem,
+  large:  3rem,
+  xlarge: 6rem
+);
+
+$core-size-shorthands: (
+  xsmall:  xs,
+  small:   s,
+  medium:  m,
+  large:   l,
+  xlarge:  xl,
+  2xlarge: xxl
+);
+
+
+// The amount to lighten/darken core colors for different states.
+$core-color-adjustment: 5%;
+
+$core-colors: (
+  neutral: (
+    100: #F7FAFC,
+    200: #EDF2F7,
+    300: #E2E8F0,
+    400: #CBD5E0,
+    500: #A0AEC0,
+    600: #718096,
+    700: #4A5568,
+    800: #2D3748,
+    900: #1A202C,
+    default: #2D3748
+  ),
+  primary: (
+    light:  #90CDF4,
+    medium: #2B6CB0,
+    dark:   #2A4365,
+  ),
+  secondary: (
+    light:  #EDF2F7,
+    medium: #CBD5E0,
+    dark:   #4A5568,
+  ),
+  warning: (
+    light:  #FEB2B2,
+    medium: #C53030,
+    dark:   #742A2A,
+  ),
+  success: (
+    light:  #9AE6B4,
+    medium: #2F855A,
+    dark:   #22543D,
+  )
+);
+
+@function core-color($color, $grade: default) {
+  @return map-get(map-get($core-colors, $color), $grade);
+};
+
+$core-text-color-default: core-color(neutral, default);
+// lightest possible neutral to meet 4.5 contrast ratio
+$core-text-color-muted: #68778D;
+
+$core-radius: 3px;
+
+$core-form-border-width: 2px;
+$core-form-borders: (
+  neutral:   $core-form-border-width solid core-color(neutral, 700),
+  secondary: $core-form-border-width solid core-color(secondary, medium),
+  primary:   $core-form-border-width solid core-color(primary, medium),
+  warning:   $core-form-border-width solid core-color(warning, medium),
+  success:   $core-form-border-width solid core-color(success, medium),
+);
+$core-form-focus-shadow-style: 0 0 5px;
+$core-form-focus-shadow: (
+  neutral:   $core-form-focus-shadow-style core-color(neutral, 300),
+  secondary: $core-form-focus-shadow-style core-color(secondary, light),
+  primary:   $core-form-focus-shadow-style core-color(primary, light),
+  warning:   $core-form-focus-shadow-style core-color(warning, light),
+  success:   $core-form-focus-shadow-style core-color(success, light),
+);
+
+$core-box-shadow-style: 0 1px 8px;
+$core-box-shadow-neutral: 0 1px 8px core-color(neutral, 500);

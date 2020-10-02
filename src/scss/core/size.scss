@@ -1,0 +1,10 @@
+@each $breakpoint, $spacing in $core-spacing {
+  $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
+
+  .h-#{$breakpoint-shorthand}    { height: $spacing; }
+  .hmin-#{$breakpoint-shorthand} { min-height: $spacing; }
+  .hmax-#{$breakpoint-shorthand} { max-height: $spacing; }
+  .w-#{$breakpoint-shorthand}    { width: $spacing; }
+  .wmin-#{$breakpoint-shorthand} { min-width: $spacing; }
+  .wmax-#{$breakpoint-shorthand} { max-width: $spacing; }
+}

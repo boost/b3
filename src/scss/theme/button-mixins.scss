@@ -1,0 +1,4 @@
+@mixin b3-button {
+  border-radius: $core-radius;
+}
+@mixin hook-button { @include b3-button; }

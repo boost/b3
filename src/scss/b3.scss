@@ -1,0 +1,10 @@
+// 1. UIkit import.
+// Creates the UIKit classes and imports the styles from
+// the provided mixins.
+@import "uikit/src/scss/uikit-theme.scss";
+
+// 2. Core B3 extensions.
+@import "core/spacing";
+@import "core/grid";
+@import "core/size";
+@import "core/functions";

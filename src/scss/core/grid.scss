@@ -1,0 +1,14 @@
+@for $i from 1 through 12 {
+  .grid-cols-#{$i} {
+    display: grid;
+    grid-template-columns: repeat($i, minmax(0, 1fr));
+
+    @each $breakpoint, $spacing in $core-spacing {
+      $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
+
+      &.grid-gap-#{$breakpoint-shorthand} {
+        gap: $spacing;
+      }
+    }
+  }
+}

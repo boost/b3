@@ -1,0 +1,14 @@
+$form-background: white !default;
+$form-focus-background: white !default;
+$form-color: core-color(neutral, 900) !default;
+$form-danger-color: core-color(neutral, 900) !default;
+$form-success-color: core-color(neutral, 900) !default;
+$form-focus-color: core-color(neutral, 900) !default;
+$form-disabled-color: core-color(neutral, 900) !default;
+
+$form-disabled-color: core-color(neutral, 600) !default;
+$form-disabled-background: core-color(neutral, 200) !default;
+
+$form-radio-size: 1.625rem !default;
+$form-radio-background: transparent !default;
+$form-radio-checked-focus-background: core-color(primary, medium) !default;
