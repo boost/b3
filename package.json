@@ -12,5 +12,8 @@
     "Nick Schuler <nick@boost.co.nz>"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "uikit": "^3.5.8"
+  }
 }
