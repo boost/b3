@@ -1,0 +1,16 @@
+{
+  "name": "b3",
+  "version": "0.0.0",
+  "description": "Boosts front-end framework",
+  "main": "index.js",
+  "repository": "git@github.com:boost/b3.git",
+  "author": "Boost",
+  "contributors": [
+    "Montgomery Anderson <montgomery@boost.co.nz>",
+    "Andy Anastasiadis-Gray <andy@boost.co.nz>",
+    "James Erwin <james@boost.co.nz>",
+    "Nick Schuler <nick@boost.co.nz>"
+  ],
+  "license": "MIT",
+  "private": true
+}
