@@ -13,23 +13,35 @@ yarn add b3
 In your application SCSS File
 
 ```scss
-@import "b3/src/scss/init";
+@import "b3/src/scss/initialize";
 
-// override b3 core variables (like colors and sizes and fonts)
-@import "variables";
-// override uikit variables for components
-@import "themes/base";
-@import "themes/text";
+// ==================================================
+// Setup application scss variables here
+// e.g. @import 'variables/palette';
+// ==================================================
+
+// ==================================================
+// Override B3 core variables here
+// e.g. @import 'core-variables';
+// ==================================================
+
+// ==================================================
+// Override UIkit component variables here
+// e.g. @import 'themes/button';
+// ==================================================
 
 @import "b3/src/scss/variables";
 @import "b3/src/scss/mixins";
 
-// define uikit mixins to customize uikit to your project
-@import "themes/base_mixins";
-@import "themes/text_mixins";
+// ==================================================
+// Override UIkit component mixins here
+// e.g. @import 'themes/button-mixins';
+// ==================================================
 
-@import "b3/src/scss/finalize";
+@import 'b3/src/scss/finalize';
 
-// your blocks / other scss
-@import "blocks/whatever"; 
+// ==================================================
+// Import any extra application scss last
+// e.g. @import 'blocks/footer';
+// ==================================================
 ```
