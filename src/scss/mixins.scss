@@ -2,9 +2,9 @@
 @import "uikit/src/scss/mixins-theme";
 
 // 2. UIkit B3 mixin overwrites.
-@import "b3/theme/base-mixins";
-@import "b3/theme/button-mixins";
-@import "b3/theme/card-mixins";
-@import "b3/theme/form-mixins";
-@import "b3/theme/search-mixins";
-// @import "b3/theme/tab-mixins";
+@import "theme/base-mixins";
+@import "theme/button-mixins";
+@import "theme/card-mixins";
+@import "theme/form-mixins";
+@import "theme/search-mixins";
+// @import "theme/tab-mixins";

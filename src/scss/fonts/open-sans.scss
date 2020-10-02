@@ -7,7 +7,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: asset-url('/fonts/open_sans/OpenSans-Regular.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-Regular.otf') format('opentype');
 }
 
 // 600 - Semibold
@@ -15,7 +15,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: asset-url('/fonts/open_sans/OpenSans-Semibold.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-Semibold.otf') format('opentype');
 }
 
 // 700 - Bold
@@ -23,7 +23,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: asset-url('/fonts/open_sans/OpenSans-Bold.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-Bold.otf') format('opentype');
 }
 
 // 800 - Extra Bold
@@ -31,7 +31,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
-  src: asset-url('/fonts/open_sans/OpenSans-Extrabold.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-Extrabold.otf') format('opentype');
 }
 
 // 900 - Black
@@ -39,7 +39,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 900;
-  src: asset-url('/fonts/open_sans/OpenSans-Black.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-Black.otf') format('opentype');
 }
 
 // --------------------------------------------------------------------------------
@@ -50,7 +50,7 @@
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: asset-url('/fonts/open_sans/OpenSans-RegularItalic.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-RegularItalic.otf') format('opentype');
 }
 
 // 600 - Semibold
@@ -58,7 +58,7 @@
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 600;
-  src: asset-url('/fonts/open_sans/OpenSans-SemiboldItalic.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-SemiboldItalic.otf') format('opentype');
 }
 
 // 700 - Bold
@@ -66,5 +66,5 @@
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
-  src: asset-url('/fonts/open_sans/OpenSans-BoldIt.otf') format('opentype');
+  src: asset-url('/src/fonts/open_sans/OpenSans-BoldIt.otf') format('opentype');
 }
