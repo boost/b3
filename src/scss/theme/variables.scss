@@ -1,4 +1,21 @@
+// Global variables
+// ========================================================================
+
+//
+// Typography
+//
+
 $global-font-family: $core-font-family !default;
+
+//
+// Colors
+//
+
+$global-color: core-color(neutral, default) !default;
+
+//
+// Backgrounds
+//
 
 $global-muted-background: core-color(neutral, 100) !default;
 $global-primary-background: core-color(primary, medium) !default;
@@ -10,4 +27,8 @@ $global-success-background: core-color(success, medium) !default;
 // $global-warning-background: #faa05a !default !default;
 $global-danger-background: core-color(warning, medium) !default;
 
-$global-color: core-color(neutral, default) !default;
+//
+// Borders
+//
+
+$global-border: $core-border-color;
