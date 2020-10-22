@@ -1,0 +1,23 @@
+@each $breakpoint, $spacing in $core-spacing {
+  $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
+
+  .pt-#{$breakpoint-shorthand} { padding-top: $spacing; }
+
+  .pr-#{$breakpoint-shorthand} { padding-right: $spacing; }
+
+  .pb-#{$breakpoint-shorthand} { padding-bottom: $spacing; }
+
+  .pl-#{$breakpoint-shorthand} { padding-left: $spacing; }
+
+  .px-#{$breakpoint-shorthand} {
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
+
+  .py-#{$breakpoint-shorthand} {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+
+  .p-#{$breakpoint-shorthand} { padding: $spacing; }
+}

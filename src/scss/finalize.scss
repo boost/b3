@@ -4,7 +4,10 @@
 @import "uikit/src/scss/uikit-theme.scss";
 
 // 2. Core B3 extensions.
-@import "core/spacing";
+@import "core/utilities/border";
+@import "core/utilities/margin";
+@import "core/utilities/padding";
+@import "core/utilities/size";
+@import "core/utilities/spacing";
 @import "core/grid";
-@import "core/size";
 @import "core/functions";

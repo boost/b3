@@ -79,7 +79,9 @@ $core-text-color-muted: #68778D;
 
 $core-radius: 3px;
 
+$core-border-width: 1px;
 $core-border-color: core-color(neutral, 700);
+$core-border: $core-border-width solid $core-border-color;
 
 $core-form-border-width: 2px;
 $core-form-borders: (
