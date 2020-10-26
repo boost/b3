@@ -1,0 +1,13 @@
+@each $breakpoint, $spacing in $core-spacing {
+  $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
+
+  .sx-#{$breakpoint-shorthand} {
+    height: $spacing;
+    width: 100%;
+  }
+
+  .sy-#{$breakpoint-shorthand} {
+    height: 100%;
+    width: $spacing;
+  }
+}

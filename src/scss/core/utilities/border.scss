@@ -1,0 +1,20 @@
+
+.bt { border-top: $core-border; }
+
+.br { border-right: $core-border; }
+
+.bb { border-bottom: $core-border; }
+
+.bl { border-left: $core-border; }
+
+.bx {
+  border-left: $core-border;
+  border-right: $core-border;
+}
+
+.by {
+  border-top: $core-border;
+  border-bottom: $core-border;
+}
+
+.b { border: $core-border; }
