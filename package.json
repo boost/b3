@@ -1,6 +1,6 @@
 {
   "name": "b3",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Boosts front-end framework",
   "main": "index.js",
   "repository": "git@github.com:boost/b3.git",
