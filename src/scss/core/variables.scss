@@ -58,6 +58,11 @@ $core-colors: (
     dark:   #4A5568,
   ),
   warning: (
+    light:  #ffe082,
+    medium: #ffca28,
+    dark:   #ffa000,
+  ),
+  danger: (
     light:  #FEB2B2,
     medium: #C53030,
     dark:   #742A2A,
@@ -88,7 +93,7 @@ $core-form-borders: (
   neutral:   $core-form-border-width solid core-color(neutral, 700),
   secondary: $core-form-border-width solid core-color(secondary, medium),
   primary:   $core-form-border-width solid core-color(primary, medium),
-  warning:   $core-form-border-width solid core-color(warning, medium),
+  danger:    $core-form-border-width solid core-color(danger, medium),
   success:   $core-form-border-width solid core-color(success, medium),
 );
 $core-form-focus-shadow-style: 0 0 5px;
@@ -96,7 +101,7 @@ $core-form-focus-shadow: (
   neutral:   $core-form-focus-shadow-style core-color(neutral, 300),
   secondary: $core-form-focus-shadow-style core-color(secondary, light),
   primary:   $core-form-focus-shadow-style core-color(primary, light),
-  warning:   $core-form-focus-shadow-style core-color(warning, light),
+  danger:    $core-form-focus-shadow-style core-color(danger, light),
   success:   $core-form-focus-shadow-style core-color(success, light),
 );
 

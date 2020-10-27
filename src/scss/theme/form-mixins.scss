@@ -11,8 +11,8 @@
 @mixin hook-form-focus { @include b3-form-focus; }
 
 @mixin b3-form-danger {
-  border: map-get($core-form-borders, warning);
-  box-shadow: map-get($core-form-focus-shadow, warning);
+  border: map-get($core-form-borders, danger);
+  box-shadow: map-get($core-form-focus-shadow, danger);
 }
 @mixin hook-form-danger { @include b3-form-danger; }
 

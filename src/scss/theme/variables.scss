@@ -17,15 +17,13 @@ $global-color: core-color(neutral, default) !default;
 // Backgrounds
 //
 
-$global-muted-background: core-color(neutral, 100) !default;
-$global-primary-background: core-color(primary, medium) !default;
+$global-muted-background:     core-color(neutral, 100) !default;
+$global-primary-background:   core-color(primary, medium) !default;
 $global-secondary-background: core-color(secondary, medium) !default;
 
 $global-success-background: core-color(success, medium) !default;
-// TODO: thikn about how we have a warning colour and not a warning & danger
-// color. This conflicts with the uikit setup which could be confusing.
-// $global-warning-background: #faa05a !default !default;
-$global-danger-background: core-color(warning, medium) !default;
+$global-warning-background: core-color(warning, medium) !default;
+$global-danger-background:  core-color(danger, medium) !default;
 
 //
 // Borders
