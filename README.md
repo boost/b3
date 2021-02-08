@@ -3,7 +3,7 @@
 ## Installation
 
 ```js
-yarn add b3
+yarn add https://github.com/boost/b3.git
 ```
 
 ## Usage
