@@ -30,7 +30,7 @@ Copy this scss into your `application.scss`.
 // 1. Import B3 initialization
 @import 'b3/src/scss/initialize';
 
-// 2. Setup all application scss variables here.
+// 2. Setup all application scss variables here
 // e.g.
 // @import 'variables/palette';
 // @import 'variables/spacing';
@@ -63,9 +63,10 @@ Copy this scss into your `application.scss`.
 // @import 'theme/form-mixins';
 // @import 'theme/badge-mixins';
 
+// 8. Import B3 finalization
 @import 'b3/src/scss/finalize';
 
-// 8. Import any extra application scss last
+// 9. Import any extra application scss last
 // e.g.
 // @import 'blocks/footer';
 // @import 'functions/conversions;
