@@ -1,5 +1,7 @@
 # Boost's Bread and Butter
 
+A design system staple for Boost's design process. Based on UIKit.
+
 ## Installation & usage
 
 ```js
