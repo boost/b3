@@ -30,43 +30,48 @@ Copy this scss into your `application.scss`.
 // 1. Import B3 initialization
 @import 'b3/src/scss/initialize';
 
-// 2. Setup all application scss variables here
+// 2. Optionally import Open Sans font from CDN
+// If you don't want to use a CDN, exclude this step and setup Open Sans as part
+// of your projects asset pipeline.
+@import 'b3/src/scss/fonts/open-sans';
+
+// 3. Setup all application scss variables here
 // e.g.
 // @import 'variables/palette';
 // @import 'variables/spacing';
 // @import 'variables/fonts';
 
-// 3. Configure/override B3 core variables here
+// 4. Configure/override B3 core variables here
 // You'll need to make this core/variables.scss file. This is where you
 // configure/override all the core b3 variables. B3 has an equivalent file that
 // you can look at to see what variables you can override.
 // See: `b3/src/scss/core/variables.scss`.
 @import 'core/variables';
 
-// 4. Override UIkit component variables here
+// 5. Override UIkit component variables here
 // e.g.
 // @import 'theme/base';
 // @import 'theme/button';
 // @import 'theme/form';
 // @import 'theme/badge';
 
-// 5. Import B3 variables (includes UIKit variables)
+// 6. Import B3 variables (includes UIKit variables)
 @import 'b3/src/scss/variables';
 
-// 6. Import B3 mixins (includes UIKit mixins)
+// 7. Import B3 mixins (includes UIKit mixins)
 @import 'b3/src/scss/mixins';
 
-// 7. Override UIkit component mixins here
+// 8. Override UIkit component mixins here
 // e.g.
 // @import 'theme/base-mixins';
 // @import 'theme/button-mixins';
 // @import 'theme/form-mixins';
 // @import 'theme/badge-mixins';
 
-// 8. Import B3 finalization
+// 9. Import B3 finalization
 @import 'b3/src/scss/finalize';
 
-// 9. Import any extra application scss last
+// 10. Import any extra application scss last
 // e.g.
 // @import 'blocks/footer';
 // @import 'functions/conversions;
