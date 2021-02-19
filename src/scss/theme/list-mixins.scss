@@ -1,0 +1,17 @@
+@mixin hook-list-striped(){
+
+    &:nth-of-type(odd) {
+        border-top: $list-striped-border-width solid $list-striped-border;
+        border-bottom: $list-striped-border-width solid $list-striped-border;
+    }
+
+}
+
+@mixin hook-inverse-list-striped(){
+
+    &:nth-of-type(odd) {
+        border-top-color: $inverse-global-border;
+        border-bottom-color: $inverse-global-border;
+    }
+
+}

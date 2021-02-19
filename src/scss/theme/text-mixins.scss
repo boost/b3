@@ -1,0 +1,10 @@
+@mixin hook-text-meta(){
+
+    a { color: $text-meta-link-color; }
+
+    a:hover {
+        color: $text-meta-link-hover-color;
+        text-decoration: none;
+    }
+
+}

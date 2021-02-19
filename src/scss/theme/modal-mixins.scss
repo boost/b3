@@ -1,0 +1,10 @@
+@mixin hook-modal-header(){ border-bottom: $modal-header-border-width solid $modal-header-border; }
+
+@mixin hook-modal-footer(){ border-top: $modal-footer-border-width solid $modal-footer-border; }
+
+@mixin hook-modal-close-full(){
+    top: 0;
+    right: 0;
+    padding: $modal-close-full-padding;
+    background: $modal-close-full-background;
+}

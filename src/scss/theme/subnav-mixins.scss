@@ -1,0 +1,6 @@
+@mixin hook-subnav-item(){
+    font-size: $subnav-item-font-size;
+    text-transform: $subnav-item-text-transform;
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color;
+}

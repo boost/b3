@@ -1,7 +1,7 @@
 // 1. UIkit import.
 // Creates the UIKit classes and imports the styles from
 // the provided mixins.
-@import "uikit/src/scss/uikit-theme.scss";
+@import "uikit/src/scss/uikit.scss";
 
 // 2. Core B3 extensions.
 @import "core/utilities/border";

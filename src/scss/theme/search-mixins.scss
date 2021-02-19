@@ -1,0 +1,3 @@
+@mixin hook-search-default-input(){ border: $search-default-border-width solid $search-default-border; }
+
+@mixin hook-inverse-search-default-input(){ border-color: $inverse-global-border; }

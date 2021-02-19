@@ -1,0 +1,19 @@
+@mixin hook-marker(){
+    border-radius: 500px;
+}
+
+@mixin hook-inverse-component-marker(){
+
+    .uk-marker {
+        background: $inverse-marker-background;
+        color: $inverse-marker-color;
+        @if(mixin-exists(hook-inverse-marker)) {@include hook-inverse-marker();}
+    }
+
+    .uk-marker:hover,
+    .uk-marker:focus {
+        color: $inverse-marker-hover-color;
+        @if(mixin-exists(hook-inverse-marker-hover)) {@include hook-inverse-marker-hover();}
+    }
+
+}
