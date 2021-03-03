@@ -1,0 +1,15 @@
+@mixin b3-visibility-misc {
+  /*
+   * Print-conditional visibility styling, worth nothing that all of this was
+   * based off of UIkits `uikit/src/scss/components/visibility.scss` breakpoint
+   * definitions.
+   */
+  @media print {
+    .uk-hidden\@p { display: none !important; }
+  }
+
+  @media screen {
+    .uk-visible\@p { display: none !important; }
+  }
+}
+@mixin hook-visibility-misc { @include b3-visibility-misc; }
