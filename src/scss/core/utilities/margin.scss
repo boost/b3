@@ -1,23 +1,37 @@
-@each $breakpoint, $spacing in $core-spacing {
-  $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
+@mixin generate-margin-classes($suffix: '') {
+  @each $breakpoint, $spacing in $core-spacing {
+    $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
 
-  .mt-#{$breakpoint-shorthand} { margin-top: $spacing; }
+    .mt-#{$breakpoint-shorthand}#{$suffix} { margin-top: $spacing; }
 
-  .mr-#{$breakpoint-shorthand} { margin-right: $spacing; }
+    .mr-#{$breakpoint-shorthand}#{$suffix} { margin-right: $spacing; }
 
-  .mb-#{$breakpoint-shorthand} { margin-bottom: $spacing; }
+    .mb-#{$breakpoint-shorthand}#{$suffix} { margin-bottom: $spacing; }
 
-  .ml-#{$breakpoint-shorthand} { margin-left: $spacing; }
+    .ml-#{$breakpoint-shorthand}#{$suffix} { margin-left: $spacing; }
 
-  .mx-#{$breakpoint-shorthand} {
-    margin-left: $spacing;
-    margin-right: $spacing;
+    .mx-#{$breakpoint-shorthand}#{$suffix} {
+      margin-left: $spacing;
+      margin-right: $spacing;
+    }
+
+    .my-#{$breakpoint-shorthand}#{$suffix} {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+
+    .m-#{$breakpoint-shorthand}#{$suffix} { margin: $spacing; }
   }
-
-  .my-#{$breakpoint-shorthand} {
-    margin-top: $spacing;
-    margin-bottom: $spacing;
-  }
-
-  .m-#{$breakpoint-shorthand} { margin: $spacing; }
 }
+
+// Generate default margin classes
+@include generate-margin-classes();
+
+// Generate per-breakpoint margin classes
+@media (min-width: $breakpoint-small)  { @include generate-margin-classes(\@s); }
+@media (min-width: $breakpoint-medium) { @include generate-margin-classes(\@m); }
+@media (min-width: $breakpoint-large)  { @include generate-margin-classes(\@l); }
+@media (min-width: $breakpoint-xlarge) { @include generate-margin-classes(\@xl); }
+
+// Generate print margin classes
+@media print { @include generate-margin-classes(\@p); }
