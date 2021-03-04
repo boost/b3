@@ -11,6 +11,13 @@
     .uk-height-max-small\@p { max-height: $height-small-height; }
     .uk-height-max-medium\@p { max-height: $height-medium-height; }
     .uk-height-max-large\@p { max-height: $height-large-height; }
+
+    /*
+     * This is not part of uikit, we sometimes want to be able to remove the
+     * height of height-constrained blocks to un-scroll things in print.
+     */
+    .uk-height-auto\@p { height: auto; }
+    .uk-height-max-none\@p { max-height: none; }
   }
 }
 @mixin hook-height-misc { @include b3-height-misc; }
