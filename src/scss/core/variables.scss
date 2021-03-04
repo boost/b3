@@ -14,6 +14,7 @@ $core-font-family:
   "Noto Color Emoji";
 
 $core-spacing: (
+  none:   0,
   xsmall: 0.5rem,
   small:  1rem,
   medium: 1.5rem,
@@ -22,6 +23,7 @@ $core-spacing: (
 );
 
 $core-size-shorthands: (
+  none:    0,
   xsmall:  xs,
   small:   s,
   medium:  m,
@@ -29,7 +31,6 @@ $core-size-shorthands: (
   xlarge:  xl,
   2xlarge: xxl
 );
-
 
 // The amount to lighten/darken core colors for different states.
 $core-color-adjustment: 5%;

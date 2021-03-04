@@ -1,0 +1,4 @@
+@mixin b3-section {
+  page-break-inside: avoid;
+}
+@mixin hook-section { @include b3-section; }

@@ -1,13 +1,28 @@
-@each $breakpoint, $spacing in $core-spacing {
-  $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
+@mixin generate-spacing-classes($suffix: '') {
+  // Iterate spacings without `none`, since it's senseless in this context.
+  @each $breakpoint, $spacing in map-remove($core-spacing, none) {
+    $breakpoint-shorthand: map-get($core-size-shorthands, $breakpoint);
 
-  .sx-#{$breakpoint-shorthand} {
-    height: $spacing;
-    width: 100%;
-  }
+    .sx-#{$breakpoint-shorthand}#{$suffix} {
+      height: $spacing;
+      width: 100%;
+    }
 
-  .sy-#{$breakpoint-shorthand} {
-    height: 100%;
-    width: $spacing;
+    .sy-#{$breakpoint-shorthand}#{$suffix} {
+      height: 100%;
+      width: $spacing;
+    }
   }
 }
+
+// Generate default spacing classes
+@include generate-spacing-classes();
+
+// Generate per-breakpoint spacing classes
+@media (min-width: $breakpoint-small)  { @include generate-spacing-classes(\@s); }
+@media (min-width: $breakpoint-medium) { @include generate-spacing-classes(\@m); }
+@media (min-width: $breakpoint-large)  { @include generate-spacing-classes(\@l); }
+@media (min-width: $breakpoint-xlarge) { @include generate-spacing-classes(\@xl); }
+
+// Generate print spacing classes
+@media print { @include generate-spacing-classes(\@p); }
