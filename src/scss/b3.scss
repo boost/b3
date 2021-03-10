@@ -1,0 +1,41 @@
+// 1. Import B3 functions
+@import 'b3/src/scss/core/functions';
+
+// 2. Load a b3-configs
+@import 'b3-config/spacing';
+@import 'b3/src/scss/config/spacing';
+
+@import 'b3-config/colors';
+@import 'b3/src/scss/config/colors';
+
+@import 'b3-config/typography';
+@import 'b3/src/scss/config/typography';
+
+@import 'b3-config/borders';
+@import 'b3/src/scss/config/borders';
+
+@import 'b3-config/forms';
+@import 'b3/src/scss/config/forms';
+
+@import 'b3-config/shadows';
+@import 'b3/src/scss/config/shadows';
+
+// 3. Configure any specific UIKit component variables here.
+@import 'theme/import-variables';
+
+// 4. Import the B3 UIKit config.
+@import 'b3/src/scss/uikit-config';
+
+// 5. Override any specific UIKit component mixins here.
+// e.g.
+// @import 'theme/button-mixins';
+// If B3 provides it's own definition of the UIkit mixin you want to extend,
+// you'll need to re-include it when you define it.
+// i.e. if you define `hook-button`, you may want to include `b3-hook-button`.
+@import 'theme/import-mixins';
+
+// 6. Import UIKit using B3.
+@import 'b3/src/scss/uikit';
+// 7. Import b3's extra utilities and grid etc.
+@import 'b3/src/scss/core/utilities/all';
+@import 'b3/src/scss/core/grid';

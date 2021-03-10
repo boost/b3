@@ -1,0 +1,12 @@
+/*
+ * -----------------------------------------------------------------------------
+ * Borders
+ * -----------------------------------------------------------------------------
+ */
+
+$core-radius: 3px !default;
+
+$core-border-width: 1px !default;
+$core-border-color: core-color(neutral, 700) !default;
+
+$core-border: $core-border-width solid $core-border-color !default;

@@ -1,0 +1,35 @@
+/*
+ * -----------------------------------------------------------------------------
+ * Forms
+ * -----------------------------------------------------------------------------
+ */
+
+$core-form-border-width: 2px !default;
+$core-form-focus-shadow-style: 0 0 5px !default;
+
+$core-form-borders-neutral:   $core-form-border-width solid core-color(neutral, 700)      !default;
+$core-form-borders-secondary: $core-form-border-width solid core-color(secondary, medium) !default;
+$core-form-borders-primary:   $core-form-border-width solid core-color(primary, medium)   !default;
+$core-form-borders-danger:    $core-form-border-width solid core-color(danger, medium)    !default;
+$core-form-borders-success:   $core-form-border-width solid core-color(success, medium)   !default;
+
+$core-form-focus-shadow-neutral:   $core-form-focus-shadow-style core-color(neutral, 300)     !default;
+$core-form-focus-shadow-secondary: $core-form-focus-shadow-style core-color(secondary, light) !default;
+$core-form-focus-shadow-primary:   $core-form-focus-shadow-style core-color(primary, light)   !default;
+$core-form-focus-shadow-danger:    $core-form-focus-shadow-style core-color(danger, light)    !default;
+$core-form-focus-shadow-success:   $core-form-focus-shadow-style core-color(success, light)   !default;
+
+$core-form-borders: (
+  neutral:   $core-form-borders-neutral,
+  secondary: $core-form-borders-secondary,
+  primary:   $core-form-borders-primary,
+  danger:    $core-form-borders-danger,
+  success:   $core-form-borders-success,
+) !default;
+$core-form-focus-shadow: (
+  neutral:   $core-form-focus-shadow-neutral,
+  secondary: $core-form-focus-shadow-secondary,
+  primary:   $core-form-focus-shadow-primary,
+  danger:    $core-form-focus-shadow-danger,
+  success:   $core-form-focus-shadow-success,
+) !default;
