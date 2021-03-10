@@ -1,0 +1,39 @@
+/*
+ * -----------------------------------------------------------------------------
+ * Spacing
+ * -----------------------------------------------------------------------------
+ */
+
+$core-spacing-none:   0      !default;
+$core-spacing-xsmall: 0.5rem !default;
+$core-spacing-small:  1rem   !default;
+$core-spacing-medium: 1.5rem !default;
+$core-spacing-large:  3rem   !default;
+$core-spacing-xlarge: 6rem   !default;
+
+$core-size-shorthands-none:    0   !default;
+$core-size-shorthands-xsmall:  xs  !default;
+$core-size-shorthands-small:   s   !default;
+$core-size-shorthands-medium:  m   !default;
+$core-size-shorthands-large:   l   !default;
+$core-size-shorthands-xlarge:  xl  !default;
+$core-size-shorthands-2xlarge: xxl !default;
+
+$core-spacing: (
+  none:   $core-spacing-none,
+  xsmall: $core-spacing-xsmall,
+  small:  $core-spacing-small,
+  medium: $core-spacing-medium,
+  large:  $core-spacing-large,
+  xlarge: $core-spacing-xlarge
+) !default;
+
+$core-size-shorthands: (
+  none:    $core-size-shorthands-none,
+  xsmall:  $core-size-shorthands-xsmall,
+  small:   $core-size-shorthands-small,
+  medium:  $core-size-shorthands-medium,
+  large:   $core-size-shorthands-large,
+  xlarge:  $core-size-shorthands-xlarge,
+  2xlarge: $core-size-shorthands-2xlarge
+) !default;

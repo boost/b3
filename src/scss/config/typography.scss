@@ -1,0 +1,26 @@
+/*
+ * -----------------------------------------------------------------------------
+ * Typography
+ * -----------------------------------------------------------------------------
+ */
+
+$core-font-family:
+  "Open Sans",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji"
+  !default;
+
+$core-text-color-default: core-color(neutral, default) !default;
+
+// lightest possible neutral to meet 4.5 contrast ratio
+$core-text-color-muted: #68778D !default;
